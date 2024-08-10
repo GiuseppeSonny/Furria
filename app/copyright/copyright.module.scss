@@ -1,0 +1,132 @@
+.main {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 80px;
+  font-family: Arial, sans-serif;
+}
+
+.mainWrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.title,
+.subtitle {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.text {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.teamDescription {
+  margin-top: 40px;
+}
+
+.teamCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+}
+
+.cardTitle {
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.cardText {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btnWrapper a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #8673f5;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btnWrapper a:hover {
+  background-color: #6a5fc7;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5a5a;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}

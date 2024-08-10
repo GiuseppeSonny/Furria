@@ -1,0 +1,88 @@
+.cityCard {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.cityCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cityCard.selected {
+  border: 2px solid #8673f5;
+}
+
+.cityInput {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 10px; 
+  margin-top: 10px;
+}
+
+.actionButtons button {
+  background-color: #ffffff;
+  color: #8673f5;
+  border: 1px solid #8673f5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.actionButtons button:hover {
+  background-color: #8673f5;
+  color: #ffffff;
+}
+
+.cityInfo {
+  flex-grow: 1;
+}
+
+.cityInfo h3 {
+  font-size: 1.3rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+.cityDates {
+  display: flex;
+  flex-direction: column;
+}
+
+.cityDates p {
+  font-size: 1rem;
+  color: #666;
+  margin: 3px 0;
+}
+
+.cityImageContainer {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.cityImage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
